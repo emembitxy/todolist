@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+</head>
+<body>
+    <h1>Todo</h1>
+
+      <form name="newTodoForm">
+        <div class="form-item">
+          <label for="todo">What do you want to do?</label>
+          <input
+            id="todo"
+            name="todo"
+            type="text"
+            placeholder="Type into this box"
+          />
+        </div>
+
+        <button type="submit">Submit</button>
+        <button id="clearTodoList">🗑️ Clear List</button>
+      </form>
+
+      <hr />
+
+      <h3>Items to do:</h3>
+      <ul id="todoList">
+        No items in todo list.
+      </ul>
+      <script src="index.js"></script>
+
+
+      <nav>
+        <button form="increase">increase</button>
+        <button name="decrease">decrease</button>
+      </nav>
+</body>
+</html>
